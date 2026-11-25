@@ -13,6 +13,23 @@ to creating, updating and deleting content through a REST API.
 The application separates the presentation layer, server-side
 logic and database into independently maintained components.
 
+## Application screenshots
+
+Screenshots of the running React application connected to
+the Express API and local MongoDB database.
+
+### Blog homepage
+
+![Blog homepage](docs/screenshots/imaji-home-posts.png)
+
+### Post creation
+
+![Create post](docs/screenshots/imaji-admin-form.png)
+
+### Post management
+
+![Post management](docs/screenshots/imaji-admin-post-list.png)
+
 ## Features
 
 ### Reader Interface
@@ -87,7 +104,7 @@ while Mongoose provides the database abstraction.
 
 ## REST API
 
-Base URL: `http://localhost:5000/api`
+Base URL: `http://localhost:5001/api`
 
 | Method | Endpoint | Description |
 |---|---|---|
@@ -177,7 +194,7 @@ cp .env.example .env
 Configure the MongoDB connection string in `.env`.
 
 ```env
-PORT=5000
+PORT=5001
 MONGO_URI=mongodb://127.0.0.1:27017/imaji_blog
 ```
 
@@ -209,7 +226,7 @@ http://localhost:3000
 
 The backend runs at:
 
-http://localhost:5000
+http://localhost:5001
 
 ## Production Build
 
